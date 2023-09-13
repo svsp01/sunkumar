@@ -1,0 +1,78 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: rgb(0, 18, 0);
+}
+.logo-parent {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  background-color: rgb(0, 18, 0);
+}
+.navbar-logo {
+  width: 2rem;
+  height: 1.5rem;
+  background-color: rgb(4, 37, 4);
+}
+.navbar-title {
+  color: #13ab67;
+}
+.navbar-icon {
+  color: #13ab67;
+  font-size: 25px;
+}
+.navbar-list {
+  display: flex;
+  align-items: center;
+}
+.navbar-list-content {
+  cursor: pointer;
+  color: white;
+  background-color: rgb(0, 18, 0);
+}
+#myElement {
+  display: none;
+}
+#myElement a {
+  text-decoration: none;
+  color: white;
+}
+#myElement a:hover {
+  color: #13ab67;
+}
+.navbar-list-content a {
+  width: 100%;
+  color: white;
+  padding: 1rem;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-list-content a:hover {
+  background-color: rgb(4, 37, 4);
+  color: #13ab67;
+}
+@media (min-width: 760px) {
+  .navbar-container {
+    padding: 1.2rem 4rem;
+  }
+  .navbar-icon-parent {
+    display: none;
+  }
+  #myElement {
+    display: block;
+    gap: 2rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    color: white;
+  }
+}
